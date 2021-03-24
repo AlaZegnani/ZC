@@ -1,5 +1,6 @@
 #Screen Shot
-![](https://media.giphy.com/media/j4rEEJ00EgvKxUXXtP/source.gif)
+![](https://pasteboard.co/JU4vsvF.png)
+![](https://pasteboard.co/JU4vGgJ.png)
 # DemoApp
 URL: https://mycodingchannel.github.io/angular-login-register-screen/
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.5.
