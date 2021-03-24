@@ -1,0 +1,103 @@
+<header class="top-header">
+  <div class="header_top">
+
+    <div class="container">
+      <div class="row">
+        <div class="logo_section">
+          <a class="navbar-brand" routerLink='/'><img src="../../assets/images/logo.png" alt="image"></a>
+        </div>
+        <div class="site_information">
+          <ul>
+            <li><a href="mailto:exchang@gmail.com"><img src="../../assets/images/mail_icon.png" alt="#" />exchang@gmail.com</a></li>
+            <li><a href="tel:exchang@gmail.com"><img src="../../assets/images/phone_icon.png" alt="#" />+21644388490</a></li>
+            <li><a class="join_bt" routerLink='/login'>Join us</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="header_bottom">
+    <div class="container">
+      <div class="col-sm-12">
+        <div class="menu_orange_section" style="background: #ff880e;">
+          <nav class="navbar header-nav navbar-expand-lg">
+            <div class="menu_section">
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-wd" aria-controls="navbar-wd" aria-expanded="false" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbar-wd">
+                <ul class="navbar-nav">
+                  <li><a class="nav-link" routerLink='/'>Acceuil</a></li>
+                  <li><a class="nav-link" routerLinkActive="active" routerLink='/about'>À propos</a></li>
+                  <li><a class="nav-link" routerLinkActive="active" routerLink='/exchange'>Échange</a></li>
+                  <li><a class="nav-link" routerLinkActive="active" routerLink='/services'>Taux de Change</a></li>
+
+                  <li><a class="nav-link" routerLinkActive="active" routerLink='/contact'>Contact</a></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <div class="search-box">
+            <input type="text" class="search-txt" placeholder="Search">
+            <a class="search-btn">
+              <img src="../../assets/images/search_icon.png" alt="#" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</header>
+<!-- End header -->
+
+<div class="center-content">
+  <mat-card class="example-card">
+    <mat-card-header>
+      <mat-card-title>Login/Register</mat-card-title>
+      <mat-card-subtitle>Angular tutorial</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+      <mat-tab-group>
+        <mat-tab label="Login">
+          <mat-form-field class="example-full-width">
+            <mat-label>Email</mat-label>
+            <input type="email" matInput placeholder="Email" value="" [(ngModel)]="email">
+            <mat-icon matSuffix>email</mat-icon>
+          </mat-form-field>
+
+          <mat-form-field class="example-full-width">
+            <mat-label>Password</mat-label>
+            <input type="password" matInput placeholder="Password" [(ngModel)]="password">
+            <mat-icon matSuffix>vpn_key</mat-icon>
+          </mat-form-field>
+          <button mat-button color="primary" (click)="login()">Login</button>
+        </mat-tab>
+        <mat-tab label="Register">
+          <mat-form-field class="example-full-width">
+            <mat-label>Email</mat-label>
+            <input type="email" matInput placeholder="Email" value="" [(ngModel)]="remail">
+            <mat-icon matSuffix>email</mat-icon>
+          </mat-form-field>
+
+          <mat-form-field class="example-full-width">
+            <mat-label>Password</mat-label>
+            <input type="password" matInput placeholder="Password" [(ngModel)]="rpassword">
+            <mat-icon matSuffix>vpn_key</mat-icon>
+          </mat-form-field>
+          <mat-form-field class="example-full-width">
+            <mat-label>Password</mat-label>
+            <input type="password" matInput placeholder="Password" [(ngModel)]="rcpassword">
+            <mat-icon matSuffix>vpn_key</mat-icon>
+          </mat-form-field>
+          <button mat-button color="primary" (click)="register()">Register</button>
+        </mat-tab>
+      </mat-tab-group>
+
+    </mat-card-content>
+
+  </mat-card>
+</div>
